@@ -8,231 +8,253 @@ exports.setEnvironment = function() {
 
 exports.scopes = [[function (nock) { 
 var result = 
-nock('http://xplattestadls3177.azuredatalakestore.net:443')
+nock('http://xplattestadls8152.azuredatalakestore.net:443')
   .put('/webhdfs/v1/adlssdkfolder01%2Fconcatfile.txt?destination=adlssdkfolder01%2Fmovefile.txt&op=RENAME&api-version=2015-10-01-preview')
   .reply(200, "{\"boolean\":true}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  'x-ms-request-id': 'b91ae164-24fa-4b64-899d-688f462bfda2',
-  'server-perf': '[b91ae16424fa4b64899d688f462bfda2][ AuthTime::845.55221145905::PostAuthTime::197.594902222601 ][IsExist :: 00:00:000 ms]%0a[HdfsGetFileStatus :: 00:00:034 ms]%0a[SS Response Process :: 00:00:000 ms]%0a[FsRename :: 00:00:097 ms]%0a[CleanCacheRename :: 00:00:005 ms]%0a[RENAME :: 00:00:138 ms]%0a',
+  'x-ms-request-id': '625c0863-2329-455d-8fa6-1738a251b90a',
+  'set-cookie': [ 'UserPrincipalSession=504ed79c-9b41-4024-a3a1-e9d8afd43b9d; path=/; secure; HttpOnly' ],
+  'server-perf': '[625c08632329455d8fa61738a251b90a][ AuthTime::1461.00348185871::PostAuthTime::31419.7010502887 ][IsExist :: 00:00:000 ms]%0a[HdfsGetFileStatus :: 00:00:038 ms]%0a[SS Response Process :: 00:00:000 ms]%0a[FsRename :: 00:00:092 ms]%0a[CleanCacheRename :: 00:00:001 ms]%0a[RENAME :: 00:00:133 ms]%0a',
+  status: '0x0',
   'x-content-type-options': 'nosniff',
   'strict-transport-security': 'max-age=15724800; includeSubDomains',
-  date: 'Mon, 07 Mar 2016 22:41:42 GMT',
+  date: 'Tue, 15 Mar 2016 20:33:16 GMT',
   connection: 'close',
   'content-length': '16' });
  return result; },
 function (nock) { 
 var result = 
-nock('https://xplattestadls3177.azuredatalakestore.net:443')
+nock('https://xplattestadls8152.azuredatalakestore.net:443')
   .put('/webhdfs/v1/adlssdkfolder01%2Fconcatfile.txt?destination=adlssdkfolder01%2Fmovefile.txt&op=RENAME&api-version=2015-10-01-preview')
   .reply(200, "{\"boolean\":true}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  'x-ms-request-id': 'b91ae164-24fa-4b64-899d-688f462bfda2',
-  'server-perf': '[b91ae16424fa4b64899d688f462bfda2][ AuthTime::845.55221145905::PostAuthTime::197.594902222601 ][IsExist :: 00:00:000 ms]%0a[HdfsGetFileStatus :: 00:00:034 ms]%0a[SS Response Process :: 00:00:000 ms]%0a[FsRename :: 00:00:097 ms]%0a[CleanCacheRename :: 00:00:005 ms]%0a[RENAME :: 00:00:138 ms]%0a',
+  'x-ms-request-id': '625c0863-2329-455d-8fa6-1738a251b90a',
+  'set-cookie': [ 'UserPrincipalSession=504ed79c-9b41-4024-a3a1-e9d8afd43b9d; path=/; secure; HttpOnly' ],
+  'server-perf': '[625c08632329455d8fa61738a251b90a][ AuthTime::1461.00348185871::PostAuthTime::31419.7010502887 ][IsExist :: 00:00:000 ms]%0a[HdfsGetFileStatus :: 00:00:038 ms]%0a[SS Response Process :: 00:00:000 ms]%0a[FsRename :: 00:00:092 ms]%0a[CleanCacheRename :: 00:00:001 ms]%0a[RENAME :: 00:00:133 ms]%0a',
+  status: '0x0',
   'x-content-type-options': 'nosniff',
   'strict-transport-security': 'max-age=15724800; includeSubDomains',
-  date: 'Mon, 07 Mar 2016 22:41:42 GMT',
+  date: 'Tue, 15 Mar 2016 20:33:16 GMT',
   connection: 'close',
   'content-length': '16' });
  return result; },
 function (nock) { 
 var result = 
-nock('http://xplattestadls3177.azuredatalakestore.net:443')
+nock('http://xplattestadls8152.azuredatalakestore.net:443')
   .get('/webhdfs/v1/adlssdkfolder01%2Fmovefile.txt?op=GETFILESTATUS&api-version=2015-10-01-preview')
-  .reply(200, "{\"FileStatus\":{\"length\":44,\"pathSuffix\":\"\",\"type\":\"FILE\",\"blockSize\":268435456,\"accessTime\":1457390500960,\"modificationTime\":1457390501133,\"replication\":0,\"permission\":\"777\",\"owner\":\"NotSupportYet\",\"group\":\"NotSupportYet\"}}", { 'cache-control': 'no-cache',
+  .reply(200, "{\"FileStatus\":{\"length\":44,\"pathSuffix\":\"\",\"type\":\"FILE\",\"blockSize\":268435456,\"accessTime\":1458073992923,\"modificationTime\":1458073993560,\"replication\":0,\"permission\":\"777\",\"owner\":\"NotSupportYet\",\"group\":\"NotSupportYet\"}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  'x-ms-request-id': 'd7c5c9c6-cee3-4fe5-b6fc-eb4199bd4da1',
-  'server-perf': '[d7c5c9c6cee34fe5b6fceb4199bd4da1][ AuthTime::872.497344015438::PostAuthTime::186.902617320954 ][IsExist :: 00:00:000 ms]%0a[HdfsGetFileStatus :: 00:00:062 ms]%0a[SS Response Process :: 00:00:000 ms]%0a[GETFILESTATUS :: 00:00:063 ms]%0a',
+  'x-ms-request-id': '56140e05-d535-43f3-8818-284038093650',
+  'set-cookie': [ 'UserPrincipalSession=c8b08104-2ba9-4309-82f5-63f9964831b7; path=/; secure; HttpOnly' ],
+  'server-perf': '[56140e05d53543f38818284038093650][ AuthTime::1368.62504079144::PostAuthTime::31449.7203514116 ][IsExist :: 00:00:000 ms]%0a[HdfsGetFileStatus :: 00:00:103 ms]%0a[SS Response Process :: 00:00:000 ms]%0a[GETFILESTATUS :: 00:00:103 ms]%0a',
+  status: '0x0',
   'x-content-type-options': 'nosniff',
   'strict-transport-security': 'max-age=15724800; includeSubDomains',
-  date: 'Mon, 07 Mar 2016 22:41:42 GMT',
+  date: 'Tue, 15 Mar 2016 20:33:17 GMT',
   connection: 'close',
   'content-length': '223' });
  return result; },
 function (nock) { 
 var result = 
-nock('https://xplattestadls3177.azuredatalakestore.net:443')
+nock('https://xplattestadls8152.azuredatalakestore.net:443')
   .get('/webhdfs/v1/adlssdkfolder01%2Fmovefile.txt?op=GETFILESTATUS&api-version=2015-10-01-preview')
-  .reply(200, "{\"FileStatus\":{\"length\":44,\"pathSuffix\":\"\",\"type\":\"FILE\",\"blockSize\":268435456,\"accessTime\":1457390500960,\"modificationTime\":1457390501133,\"replication\":0,\"permission\":\"777\",\"owner\":\"NotSupportYet\",\"group\":\"NotSupportYet\"}}", { 'cache-control': 'no-cache',
+  .reply(200, "{\"FileStatus\":{\"length\":44,\"pathSuffix\":\"\",\"type\":\"FILE\",\"blockSize\":268435456,\"accessTime\":1458073992923,\"modificationTime\":1458073993560,\"replication\":0,\"permission\":\"777\",\"owner\":\"NotSupportYet\",\"group\":\"NotSupportYet\"}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  'x-ms-request-id': 'd7c5c9c6-cee3-4fe5-b6fc-eb4199bd4da1',
-  'server-perf': '[d7c5c9c6cee34fe5b6fceb4199bd4da1][ AuthTime::872.497344015438::PostAuthTime::186.902617320954 ][IsExist :: 00:00:000 ms]%0a[HdfsGetFileStatus :: 00:00:062 ms]%0a[SS Response Process :: 00:00:000 ms]%0a[GETFILESTATUS :: 00:00:063 ms]%0a',
+  'x-ms-request-id': '56140e05-d535-43f3-8818-284038093650',
+  'set-cookie': [ 'UserPrincipalSession=c8b08104-2ba9-4309-82f5-63f9964831b7; path=/; secure; HttpOnly' ],
+  'server-perf': '[56140e05d53543f38818284038093650][ AuthTime::1368.62504079144::PostAuthTime::31449.7203514116 ][IsExist :: 00:00:000 ms]%0a[HdfsGetFileStatus :: 00:00:103 ms]%0a[SS Response Process :: 00:00:000 ms]%0a[GETFILESTATUS :: 00:00:103 ms]%0a',
+  status: '0x0',
   'x-content-type-options': 'nosniff',
   'strict-transport-security': 'max-age=15724800; includeSubDomains',
-  date: 'Mon, 07 Mar 2016 22:41:42 GMT',
+  date: 'Tue, 15 Mar 2016 20:33:17 GMT',
   connection: 'close',
   'content-length': '223' });
  return result; },
 function (nock) { 
 var result = 
-nock('http://xplattestadls3177.azuredatalakestore.net:443')
+nock('http://xplattestadls8152.azuredatalakestore.net:443')
   .get('/webhdfs/v1/adlssdkfolder01%2Fconcatfile.txt?op=GETFILESTATUS&api-version=2015-10-01-preview')
-  .reply(404, "{\"RemoteException\":{\"exception\":\"FileNotFoundException\",\"message\":\"File/Folder does not exist: /adlssdkfolder01/concatfile.txt [df185eb0367d43179b0ca3914b2232f4]\",\"javaClassName\":\"java.io.FileNotFoundException\"}}", { 'cache-control': 'no-cache',
+  .reply(404, "{\"RemoteException\":{\"exception\":\"FileNotFoundException\",\"message\":\"File/Folder does not exist: /adlssdkfolder01/concatfile.txt [e9790500eb864e20b301b62fb82493b8]\",\"javaClassName\":\"java.io.FileNotFoundException\"}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  'x-ms-request-id': 'df185eb0-367d-4317-9b0c-a3914b2232f4',
-  'server-perf': '[df185eb0367d43179b0ca3914b2232f4][ AuthTime::896.875946274693::PostAuthTime::208.287356144862 ][IsExist :: 00:00:000 ms]%0a[HdfsGetFileStatus :: 00:00:016 ms]%0a[SS Response Process :: 00:00:000 ms]%0a[GETFILESTATUS :: 00:00:016 ms]%0a',
+  'x-ms-request-id': 'e9790500-eb86-4e20-b301-b62fb82493b8',
+  'set-cookie': [ 'UserPrincipalSession=3ef8a35d-45dd-421a-b63f-bc6f277a5810; path=/; secure; HttpOnly' ],
+  'server-perf': '[e9790500eb864e20b301b62fb82493b8][ AuthTime::1548.68344799122::PostAuthTime::31032.6908642218 ][IsExist :: 00:00:000 ms]%0a[HdfsGetFileStatus :: 00:00:115 ms]%0a[SS Response Process :: 00:00:000 ms]%0a[GETFILESTATUS :: 00:00:116 ms]%0a',
+  status: '0x8309000A',
   'x-content-type-options': 'nosniff',
   'strict-transport-security': 'max-age=15724800; includeSubDomains',
-  date: 'Mon, 07 Mar 2016 22:41:42 GMT',
+  date: 'Tue, 15 Mar 2016 20:33:18 GMT',
   connection: 'close',
   'content-length': '212' });
  return result; },
 function (nock) { 
 var result = 
-nock('https://xplattestadls3177.azuredatalakestore.net:443')
+nock('https://xplattestadls8152.azuredatalakestore.net:443')
   .get('/webhdfs/v1/adlssdkfolder01%2Fconcatfile.txt?op=GETFILESTATUS&api-version=2015-10-01-preview')
-  .reply(404, "{\"RemoteException\":{\"exception\":\"FileNotFoundException\",\"message\":\"File/Folder does not exist: /adlssdkfolder01/concatfile.txt [df185eb0367d43179b0ca3914b2232f4]\",\"javaClassName\":\"java.io.FileNotFoundException\"}}", { 'cache-control': 'no-cache',
+  .reply(404, "{\"RemoteException\":{\"exception\":\"FileNotFoundException\",\"message\":\"File/Folder does not exist: /adlssdkfolder01/concatfile.txt [e9790500eb864e20b301b62fb82493b8]\",\"javaClassName\":\"java.io.FileNotFoundException\"}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  'x-ms-request-id': 'df185eb0-367d-4317-9b0c-a3914b2232f4',
-  'server-perf': '[df185eb0367d43179b0ca3914b2232f4][ AuthTime::896.875946274693::PostAuthTime::208.287356144862 ][IsExist :: 00:00:000 ms]%0a[HdfsGetFileStatus :: 00:00:016 ms]%0a[SS Response Process :: 00:00:000 ms]%0a[GETFILESTATUS :: 00:00:016 ms]%0a',
+  'x-ms-request-id': 'e9790500-eb86-4e20-b301-b62fb82493b8',
+  'set-cookie': [ 'UserPrincipalSession=3ef8a35d-45dd-421a-b63f-bc6f277a5810; path=/; secure; HttpOnly' ],
+  'server-perf': '[e9790500eb864e20b301b62fb82493b8][ AuthTime::1548.68344799122::PostAuthTime::31032.6908642218 ][IsExist :: 00:00:000 ms]%0a[HdfsGetFileStatus :: 00:00:115 ms]%0a[SS Response Process :: 00:00:000 ms]%0a[GETFILESTATUS :: 00:00:116 ms]%0a',
+  status: '0x8309000A',
   'x-content-type-options': 'nosniff',
   'strict-transport-security': 'max-age=15724800; includeSubDomains',
-  date: 'Mon, 07 Mar 2016 22:41:42 GMT',
+  date: 'Tue, 15 Mar 2016 20:33:18 GMT',
   connection: 'close',
   'content-length': '212' });
  return result; },
 function (nock) { 
 var result = 
-nock('http://xplattestadls3177.azuredatalakestore.net:443')
+nock('http://xplattestadls8152.azuredatalakestore.net:443')
   .put('/webhdfs/v1/adlssdkfolder01?destination=adlssdkfolder02&op=RENAME&api-version=2015-10-01-preview')
   .reply(200, "{\"boolean\":true}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  'x-ms-request-id': '8e89fb27-8040-4ce1-a266-c4cfda259a82',
-  'set-cookie': [ 'UserPrincipalSession=c99d167a-7a9b-44e5-898a-696877ae424d; path=/; secure; HttpOnly' ],
-  'server-perf': '[8e89fb2780404ce1a266c4cfda259a82][ AuthTime::1796.31652465787::PostAuthTime::31630.5678327612 ][IsExist :: 00:00:000 ms]%0a[HdfsGetFileStatus :: 00:00:186 ms]%0a[SS Response Process :: 00:00:000 ms]%0a[FsRename :: 00:00:089 ms]%0a[CleanCacheRename :: 00:00:002 ms]%0a[RENAME :: 00:00:279 ms]%0a',
+  'x-ms-request-id': 'c469aceb-4ec6-4833-b02a-e1b1bab9c33f',
+  'set-cookie': [ 'UserPrincipalSession=ca9174b8-d469-42f1-83d2-054f9bf65b4b; path=/; secure; HttpOnly' ],
+  'server-perf': '[c469aceb4ec64833b02ae1b1bab9c33f][ AuthTime::1418.2364853739::PostAuthTime::31064.7679861769 ][IsExist :: 00:00:000 ms]%0a[HdfsGetFileStatus :: 00:00:096 ms]%0a[SS Response Process :: 00:00:000 ms]%0a[FsRename :: 00:00:094 ms]%0a[CleanCacheRename :: 00:00:000 ms]%0a[RENAME :: 00:00:192 ms]%0a',
+  status: '0x0',
   'x-content-type-options': 'nosniff',
   'strict-transport-security': 'max-age=15724800; includeSubDomains',
-  date: 'Mon, 07 Mar 2016 22:41:42 GMT',
+  date: 'Tue, 15 Mar 2016 20:33:19 GMT',
   connection: 'close',
   'content-length': '16' });
  return result; },
 function (nock) { 
 var result = 
-nock('https://xplattestadls3177.azuredatalakestore.net:443')
+nock('https://xplattestadls8152.azuredatalakestore.net:443')
   .put('/webhdfs/v1/adlssdkfolder01?destination=adlssdkfolder02&op=RENAME&api-version=2015-10-01-preview')
   .reply(200, "{\"boolean\":true}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  'x-ms-request-id': '8e89fb27-8040-4ce1-a266-c4cfda259a82',
-  'set-cookie': [ 'UserPrincipalSession=c99d167a-7a9b-44e5-898a-696877ae424d; path=/; secure; HttpOnly' ],
-  'server-perf': '[8e89fb2780404ce1a266c4cfda259a82][ AuthTime::1796.31652465787::PostAuthTime::31630.5678327612 ][IsExist :: 00:00:000 ms]%0a[HdfsGetFileStatus :: 00:00:186 ms]%0a[SS Response Process :: 00:00:000 ms]%0a[FsRename :: 00:00:089 ms]%0a[CleanCacheRename :: 00:00:002 ms]%0a[RENAME :: 00:00:279 ms]%0a',
+  'x-ms-request-id': 'c469aceb-4ec6-4833-b02a-e1b1bab9c33f',
+  'set-cookie': [ 'UserPrincipalSession=ca9174b8-d469-42f1-83d2-054f9bf65b4b; path=/; secure; HttpOnly' ],
+  'server-perf': '[c469aceb4ec64833b02ae1b1bab9c33f][ AuthTime::1418.2364853739::PostAuthTime::31064.7679861769 ][IsExist :: 00:00:000 ms]%0a[HdfsGetFileStatus :: 00:00:096 ms]%0a[SS Response Process :: 00:00:000 ms]%0a[FsRename :: 00:00:094 ms]%0a[CleanCacheRename :: 00:00:000 ms]%0a[RENAME :: 00:00:192 ms]%0a',
+  status: '0x0',
   'x-content-type-options': 'nosniff',
   'strict-transport-security': 'max-age=15724800; includeSubDomains',
-  date: 'Mon, 07 Mar 2016 22:41:42 GMT',
+  date: 'Tue, 15 Mar 2016 20:33:19 GMT',
   connection: 'close',
   'content-length': '16' });
  return result; },
 function (nock) { 
 var result = 
-nock('http://xplattestadls3177.azuredatalakestore.net:443')
+nock('http://xplattestadls8152.azuredatalakestore.net:443')
   .get('/webhdfs/v1/adlssdkfolder02?op=GETFILESTATUS&api-version=2015-10-01-preview')
-  .reply(200, "{\"FileStatus\":{\"length\":0,\"pathSuffix\":\"\",\"type\":\"DIRECTORY\",\"blockSize\":268435456,\"accessTime\":1457390493608,\"modificationTime\":1457390502170,\"replication\":0,\"permission\":\"777\",\"owner\":\"NotSupportYet\",\"group\":\"NotSupportYet\"}}", { 'cache-control': 'no-cache',
+  .reply(200, "{\"FileStatus\":{\"length\":0,\"pathSuffix\":\"\",\"type\":\"DIRECTORY\",\"blockSize\":268435456,\"accessTime\":1458073979136,\"modificationTime\":1458073996840,\"replication\":0,\"permission\":\"777\",\"owner\":\"NotSupportYet\",\"group\":\"NotSupportYet\"}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  'x-ms-request-id': '10a0d185-ef3d-49c3-b7f5-aba2190781a5',
-  'set-cookie': [ 'UserPrincipalSession=eaec2092-5256-457a-8daf-c4ca0cc3e5ba; path=/; secure; HttpOnly' ],
-  'server-perf': '[10a0d185ef3d49c3b7f5aba2190781a5][ AuthTime::1769.79947119863::PostAuthTime::31349.1449105648 ][IsExist :: 00:00:000 ms]%0a[HdfsGetFileStatus :: 00:00:070 ms]%0a[SS Response Process :: 00:00:000 ms]%0a[GETFILESTATUS :: 00:00:070 ms]%0a',
+  'x-ms-request-id': 'a07fa898-7a67-4466-aafb-c641b659a0e8',
+  'set-cookie': [ 'UserPrincipalSession=defcfbf4-c5d5-479b-ad4d-50fd0e159d24; path=/; secure; HttpOnly' ],
+  'server-perf': '[a07fa8987a674466aafbc641b659a0e8][ AuthTime::1465.28167752084::PostAuthTime::31510.8268747886 ][IsExist :: 00:00:000 ms]%0a[HdfsGetFileStatus :: 00:00:050 ms]%0a[SS Response Process :: 00:00:000 ms]%0a[GETFILESTATUS :: 00:00:051 ms]%0a',
+  status: '0x0',
   'x-content-type-options': 'nosniff',
   'strict-transport-security': 'max-age=15724800; includeSubDomains',
-  date: 'Mon, 07 Mar 2016 22:41:43 GMT',
+  date: 'Tue, 15 Mar 2016 20:33:21 GMT',
   connection: 'close',
   'content-length': '227' });
  return result; },
 function (nock) { 
 var result = 
-nock('https://xplattestadls3177.azuredatalakestore.net:443')
+nock('https://xplattestadls8152.azuredatalakestore.net:443')
   .get('/webhdfs/v1/adlssdkfolder02?op=GETFILESTATUS&api-version=2015-10-01-preview')
-  .reply(200, "{\"FileStatus\":{\"length\":0,\"pathSuffix\":\"\",\"type\":\"DIRECTORY\",\"blockSize\":268435456,\"accessTime\":1457390493608,\"modificationTime\":1457390502170,\"replication\":0,\"permission\":\"777\",\"owner\":\"NotSupportYet\",\"group\":\"NotSupportYet\"}}", { 'cache-control': 'no-cache',
+  .reply(200, "{\"FileStatus\":{\"length\":0,\"pathSuffix\":\"\",\"type\":\"DIRECTORY\",\"blockSize\":268435456,\"accessTime\":1458073979136,\"modificationTime\":1458073996840,\"replication\":0,\"permission\":\"777\",\"owner\":\"NotSupportYet\",\"group\":\"NotSupportYet\"}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  'x-ms-request-id': '10a0d185-ef3d-49c3-b7f5-aba2190781a5',
-  'set-cookie': [ 'UserPrincipalSession=eaec2092-5256-457a-8daf-c4ca0cc3e5ba; path=/; secure; HttpOnly' ],
-  'server-perf': '[10a0d185ef3d49c3b7f5aba2190781a5][ AuthTime::1769.79947119863::PostAuthTime::31349.1449105648 ][IsExist :: 00:00:000 ms]%0a[HdfsGetFileStatus :: 00:00:070 ms]%0a[SS Response Process :: 00:00:000 ms]%0a[GETFILESTATUS :: 00:00:070 ms]%0a',
+  'x-ms-request-id': 'a07fa898-7a67-4466-aafb-c641b659a0e8',
+  'set-cookie': [ 'UserPrincipalSession=defcfbf4-c5d5-479b-ad4d-50fd0e159d24; path=/; secure; HttpOnly' ],
+  'server-perf': '[a07fa8987a674466aafbc641b659a0e8][ AuthTime::1465.28167752084::PostAuthTime::31510.8268747886 ][IsExist :: 00:00:000 ms]%0a[HdfsGetFileStatus :: 00:00:050 ms]%0a[SS Response Process :: 00:00:000 ms]%0a[GETFILESTATUS :: 00:00:051 ms]%0a',
+  status: '0x0',
   'x-content-type-options': 'nosniff',
   'strict-transport-security': 'max-age=15724800; includeSubDomains',
-  date: 'Mon, 07 Mar 2016 22:41:43 GMT',
+  date: 'Tue, 15 Mar 2016 20:33:21 GMT',
   connection: 'close',
   'content-length': '227' });
  return result; },
 function (nock) { 
 var result = 
-nock('http://xplattestadls3177.azuredatalakestore.net:443')
+nock('http://xplattestadls8152.azuredatalakestore.net:443')
   .get('/webhdfs/v1/adlssdkfolder01?op=GETFILESTATUS&api-version=2015-10-01-preview')
-  .reply(404, "{\"RemoteException\":{\"exception\":\"FileNotFoundException\",\"message\":\"File/Folder does not exist: /adlssdkfolder01 [51d1d9c6d497420ab21cf8d231036e33]\",\"javaClassName\":\"java.io.FileNotFoundException\"}}", { 'cache-control': 'no-cache',
+  .reply(404, "{\"RemoteException\":{\"exception\":\"FileNotFoundException\",\"message\":\"File/Folder does not exist: /adlssdkfolder01 [8698e69732aa43db9f47df4fe5911c00]\",\"javaClassName\":\"java.io.FileNotFoundException\"}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  'x-ms-request-id': '51d1d9c6-d497-420a-b21c-f8d231036e33',
-  'server-perf': '[51d1d9c6d497420ab21cf8d231036e33][ AuthTime::817.752412626234::PostAuthTime::195.456512850517 ][IsExist :: 00:00:000 ms]%0a[HdfsGetFileStatus :: 00:00:030 ms]%0a[SS Response Process :: 00:00:000 ms]%0a[GETFILESTATUS :: 00:00:031 ms]%0a',
+  'x-ms-request-id': '8698e697-32aa-43db-9f47-df4fe5911c00',
+  'set-cookie': [ 'UserPrincipalSession=41f966d3-5f64-41f1-9b40-a1de41a51dc7; path=/; secure; HttpOnly' ],
+  'server-perf': '[8698e69732aa43db9f47df4fe5911c00][ AuthTime::1481.10764440586::PostAuthTime::30895.8284772135 ][IsExist :: 00:00:000 ms]%0a[HdfsGetFileStatus :: 00:00:043 ms]%0a[SS Response Process :: 00:00:000 ms]%0a[GETFILESTATUS :: 00:00:043 ms]%0a',
+  status: '0x8309000A',
   'x-content-type-options': 'nosniff',
   'strict-transport-security': 'max-age=15724800; includeSubDomains',
-  date: 'Mon, 07 Mar 2016 22:41:43 GMT',
+  date: 'Tue, 15 Mar 2016 20:33:21 GMT',
   connection: 'close',
   'content-length': '197' });
  return result; },
 function (nock) { 
 var result = 
-nock('https://xplattestadls3177.azuredatalakestore.net:443')
+nock('https://xplattestadls8152.azuredatalakestore.net:443')
   .get('/webhdfs/v1/adlssdkfolder01?op=GETFILESTATUS&api-version=2015-10-01-preview')
-  .reply(404, "{\"RemoteException\":{\"exception\":\"FileNotFoundException\",\"message\":\"File/Folder does not exist: /adlssdkfolder01 [51d1d9c6d497420ab21cf8d231036e33]\",\"javaClassName\":\"java.io.FileNotFoundException\"}}", { 'cache-control': 'no-cache',
+  .reply(404, "{\"RemoteException\":{\"exception\":\"FileNotFoundException\",\"message\":\"File/Folder does not exist: /adlssdkfolder01 [8698e69732aa43db9f47df4fe5911c00]\",\"javaClassName\":\"java.io.FileNotFoundException\"}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  'x-ms-request-id': '51d1d9c6-d497-420a-b21c-f8d231036e33',
-  'server-perf': '[51d1d9c6d497420ab21cf8d231036e33][ AuthTime::817.752412626234::PostAuthTime::195.456512850517 ][IsExist :: 00:00:000 ms]%0a[HdfsGetFileStatus :: 00:00:030 ms]%0a[SS Response Process :: 00:00:000 ms]%0a[GETFILESTATUS :: 00:00:031 ms]%0a',
+  'x-ms-request-id': '8698e697-32aa-43db-9f47-df4fe5911c00',
+  'set-cookie': [ 'UserPrincipalSession=41f966d3-5f64-41f1-9b40-a1de41a51dc7; path=/; secure; HttpOnly' ],
+  'server-perf': '[8698e69732aa43db9f47df4fe5911c00][ AuthTime::1481.10764440586::PostAuthTime::30895.8284772135 ][IsExist :: 00:00:000 ms]%0a[HdfsGetFileStatus :: 00:00:043 ms]%0a[SS Response Process :: 00:00:000 ms]%0a[GETFILESTATUS :: 00:00:043 ms]%0a',
+  status: '0x8309000A',
   'x-content-type-options': 'nosniff',
   'strict-transport-security': 'max-age=15724800; includeSubDomains',
-  date: 'Mon, 07 Mar 2016 22:41:43 GMT',
+  date: 'Tue, 15 Mar 2016 20:33:21 GMT',
   connection: 'close',
   'content-length': '197' });
  return result; },
 function (nock) { 
 var result = 
-nock('http://xplattestadls3177.azuredatalakestore.net:443')
+nock('http://xplattestadls8152.azuredatalakestore.net:443')
   .get('/webhdfs/v1/adlssdkfolder02?op=LISTSTATUS&api-version=2015-10-01-preview')
-  .reply(200, "{\"FileStatuses\":{\"FileStatus\":[{\"length\":44,\"pathSuffix\":\"movefile.txt\",\"type\":\"FILE\",\"blockSize\":268435456,\"accessTime\":1457390500960,\"modificationTime\":1457390501133,\"replication\":0,\"permission\":\"777\",\"owner\":\"NotSupportYet\",\"group\":\"NotSupportYet\"}]}}", { 'cache-control': 'no-cache',
+  .reply(200, "{\"FileStatuses\":{\"FileStatus\":[{\"length\":44,\"pathSuffix\":\"movefile.txt\",\"type\":\"FILE\",\"blockSize\":268435456,\"accessTime\":1458073992923,\"modificationTime\":1458073993560,\"replication\":0,\"permission\":\"777\",\"owner\":\"NotSupportYet\",\"group\":\"NotSupportYet\"}]}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  'x-ms-request-id': 'ed935cf4-1a40-4912-a8a1-e6ab4d86882e',
-  'set-cookie': [ 'UserPrincipalSession=df3df6b1-6d0d-42cf-ad81-3853a58b4065; path=/; secure; HttpOnly' ],
-  'server-perf': '[ed935cf41a404912a8a1e6ab4d86882e][ AuthTime::1690.67817451237::PostAuthTime::31065.6233760957 ][FsEnumerateDirectory :: 00:00:052 ms]%0a[FsEnumerateDirectory :: 00:00:052 ms]%0a[ListDirectory :: 00:00:052 ms]%0a[LISTSTATUS :: 00:00:052 ms]%0a',
+  'x-ms-request-id': 'f62d4478-d0e8-4da6-9f92-77528450555e',
+  'set-cookie': [ 'UserPrincipalSession=8d8a267e-7b2f-406c-912f-69348462ffce; path=/; secure; HttpOnly' ],
+  'server-perf': '[f62d4478d0e84da69f9277528450555e][ AuthTime::1469.98694675542::PostAuthTime::30948.4217207358 ][FsEnumerateDirectory :: 00:00:362 ms]%0a[EnumerateDirectory :: 00:00:362 ms]%0a[ListDirectory :: 00:00:362 ms]%0a[LISTSTATUS :: 00:00:362 ms]%0a',
+  status: '0x0',
   'x-content-type-options': 'nosniff',
   'strict-transport-security': 'max-age=15724800; includeSubDomains',
-  date: 'Mon, 07 Mar 2016 22:41:44 GMT',
+  date: 'Tue, 15 Mar 2016 20:33:23 GMT',
   connection: 'close',
   'content-length': '254' });
  return result; },
 function (nock) { 
 var result = 
-nock('https://xplattestadls3177.azuredatalakestore.net:443')
+nock('https://xplattestadls8152.azuredatalakestore.net:443')
   .get('/webhdfs/v1/adlssdkfolder02?op=LISTSTATUS&api-version=2015-10-01-preview')
-  .reply(200, "{\"FileStatuses\":{\"FileStatus\":[{\"length\":44,\"pathSuffix\":\"movefile.txt\",\"type\":\"FILE\",\"blockSize\":268435456,\"accessTime\":1457390500960,\"modificationTime\":1457390501133,\"replication\":0,\"permission\":\"777\",\"owner\":\"NotSupportYet\",\"group\":\"NotSupportYet\"}]}}", { 'cache-control': 'no-cache',
+  .reply(200, "{\"FileStatuses\":{\"FileStatus\":[{\"length\":44,\"pathSuffix\":\"movefile.txt\",\"type\":\"FILE\",\"blockSize\":268435456,\"accessTime\":1458073992923,\"modificationTime\":1458073993560,\"replication\":0,\"permission\":\"777\",\"owner\":\"NotSupportYet\",\"group\":\"NotSupportYet\"}]}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  'x-ms-request-id': 'ed935cf4-1a40-4912-a8a1-e6ab4d86882e',
-  'set-cookie': [ 'UserPrincipalSession=df3df6b1-6d0d-42cf-ad81-3853a58b4065; path=/; secure; HttpOnly' ],
-  'server-perf': '[ed935cf41a404912a8a1e6ab4d86882e][ AuthTime::1690.67817451237::PostAuthTime::31065.6233760957 ][FsEnumerateDirectory :: 00:00:052 ms]%0a[FsEnumerateDirectory :: 00:00:052 ms]%0a[ListDirectory :: 00:00:052 ms]%0a[LISTSTATUS :: 00:00:052 ms]%0a',
+  'x-ms-request-id': 'f62d4478-d0e8-4da6-9f92-77528450555e',
+  'set-cookie': [ 'UserPrincipalSession=8d8a267e-7b2f-406c-912f-69348462ffce; path=/; secure; HttpOnly' ],
+  'server-perf': '[f62d4478d0e84da69f9277528450555e][ AuthTime::1469.98694675542::PostAuthTime::30948.4217207358 ][FsEnumerateDirectory :: 00:00:362 ms]%0a[EnumerateDirectory :: 00:00:362 ms]%0a[ListDirectory :: 00:00:362 ms]%0a[LISTSTATUS :: 00:00:362 ms]%0a',
+  status: '0x0',
   'x-content-type-options': 'nosniff',
   'strict-transport-security': 'max-age=15724800; includeSubDomains',
-  date: 'Mon, 07 Mar 2016 22:41:44 GMT',
+  date: 'Tue, 15 Mar 2016 20:33:23 GMT',
   connection: 'close',
   'content-length': '254' });
  return result; }]];
